@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="/web/styles.css">
+</head>
+<div class="container">
+    <h1>Upload an Image</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="result">
+        <h2>Result</h2>
+        <p id="license"></p>
+        <p id="score"></p>
+        <div class="img">
+            <img id="originalImage" src="" alt="Original Image" style="height: 500px;">
+            <img id="outputImage" src="" alt="Processed Image" style="height: 500px;">
+        </div>
+    </div>
+</div>
+<script src="/web/scripts.js"></script>
+</body>
+</html>
